@@ -1,0 +1,20 @@
+diff --git a/node_modules/@strapi/plugin-upload/admin/src/components/EditAssetDialog/index.js b/node_modules/@strapi/plugin-upload/admin/src/components/EditAssetDialog/index.js
+index d2e9cee..f1cf0c5 100644
+--- a/node_modules/@strapi/plugin-upload/admin/src/components/EditAssetDialog/index.js
++++ b/node_modules/@strapi/plugin-upload/admin/src/components/EditAssetDialog/index.js
+@@ -193,6 +193,15 @@ export const EditAssetDialog = ({
+                   <Stack spacing={3}>
+                     <ContextInfo
+                       blocks={[
++
++                        {
++                          label: formatMessage({
++                            id: getTrad('modal.file-details.id'),
++                            defaultMessage: 'File ID',
++                          }),
++                          value: asset.id,
++                        },
++
+                         {
+                           label: formatMessage({
+                             id: getTrad('modal.file-details.size'),
